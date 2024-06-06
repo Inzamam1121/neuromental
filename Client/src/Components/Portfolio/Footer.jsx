@@ -2,8 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='w-screen'>
-            <div className="flex flex-col items-center gap-5 bg-gradient3 py-5 w-screen">
+            <div className="flex flex-col items-center gap-5 bg-gradient3 py-5">
                 <div className="w-[40%]">
                     <img src="../../public/images/footerlogo.png" alt="" />
                 </div>
@@ -18,7 +17,6 @@ const Footer = () => {
                     <p>© 2024 Neuromentaltraining.</p>
                 </div>
             </div>
-        </div>
     )
 }
 

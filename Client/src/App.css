@@ -1,0 +1,12 @@
+.btn{
+    transform: translateY(50%);
+}
+.img{
+    transform: translateY(-30%);
+}
+.img_2{
+    transform: translateY(-10%); 
+}
+.semi{
+    transform: translateY(10%); 
+}
