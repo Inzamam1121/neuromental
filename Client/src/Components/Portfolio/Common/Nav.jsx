@@ -22,8 +22,8 @@ const Nav = () => {
             </ul>
           </div>
           <div className="buttons lg:flex gap-4 mr-5 hidden font-pop text-lg font-semibold">
-            <button className='border-2 px-7 py-2 rounded-2xl text-[#06050B]'>Login</button>
-            <button className='border-2 px-7 py-2 rounded-2xl bg-gradient3 text-[#FFFFFF]'>Sign Up</button>
+            <button className='border-2 px-7 py-2 rounded-2xl text-[#06050B]'><Link to='/login'>Login</Link></button>
+            <button className='border-2 px-7 py-2 rounded-2xl bg-gradient3 text-[#FFFFFF]'><Link to='/signup'>Sign Up</Link></button>
           </div>
           <div className=' block lg:hidden text-2xl' onClick={() => { setIsdisplay(!Isdisplay) }}>
             {Isdisplay ? <IoClose /> : <TiThMenu />}
@@ -43,8 +43,8 @@ const Nav = () => {
           </ul>
         </div>
         <div className="buttons flex flex-col md:flex-row gap-4 px-8 font-pop text-lg font-semibold">
-          <button className='border-2 px-7 rounded-2xl text-[#06050B] py-2 w-fit'>Login</button>
-          <button className='border-2 px-7 rounded-2xl bg-gradient3 text-white py-2 w-fit'>Sign Up</button>
+          <button className='border-2 px-7 rounded-2xl text-[#06050B] py-2 w-fit'><Link>Login</Link></button>
+          <button className='border-2 px-7 rounded-2xl bg-gradient3 text-white py-2 w-fit'><Link>Sign Up</Link></button>
         </div>
       </div>}
     </>

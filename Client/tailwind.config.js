@@ -8,13 +8,19 @@ export default {
     extend: {
       fontFamily:{
         pop:"Poppins",
-        Head:"Montserrat"
+        Head:"Montserrat",
+        ruda:'Ruda'
       },
       colors:{
         mainpurple:"#8B668B"
       },
       backgroundImage:{
-        gradient3:"linear-gradient(180deg, #8B668B 0%, rgba(37, 27, 37, 0.7) 100%)"
+        gradient3:"linear-gradient(180deg, #8B668B 0%, rgba(37, 27, 37, 0.7) 100%)",
+        gradient4:'background: #7370907A'
+
+      },
+      boxShadow:{
+        shadow: "0px 141px 200px -80px #8B668B4D"
 
       }
     },
