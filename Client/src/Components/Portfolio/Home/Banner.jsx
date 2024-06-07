@@ -5,10 +5,10 @@ const Banner = () => {
     <>
       <div className="md:flex justify-center relative">
         <div className="lg:w-[50%] w-[100%] flex flex-col justify-center items-start px-16 bg-[#6c276c] font-pop">
-          <p className="font-semibold text-white  w-88 text-3xl capitalize w-[50%] leading-8 font-pop">
+          <p className="font-semibold text-white  w-88 text-3xl capitalize lg:w-[50%] w-[100%] leading-8 font-pop">
             From Brain Owner to Brain User
           </p>
-          <p className="text-white capitalize font-pop py-5 text-2xl w-[80%]">
+          <p className="text-white capitalize font-pop py-5 text-2xl lg:w-[80%] w-[100%]">
             Neuromental training is the New Mental training.
           </p>
           <div>

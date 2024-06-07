@@ -5,7 +5,7 @@ const Cards = () => {
   return (
     <div>
       <div className="w-[90%] rounded-2xl m-auto ">
-        <div className="flex  gap-4">
+        <div className=" flex lg:flex-row flex-col  justify-center  gap-4">
           <div className="lg:w-[55%] w-[100%] rounded-2xl border-2 border-[#AFAFAF]">
             <div className="flex">
               <div className="ml-9">
@@ -19,17 +19,37 @@ const Cards = () => {
                 <div className="font-pop font-semibold mt-3 w-[60%] pt-6">
                   Diploma in neuromental trainer
                 </div>
-                <div className="py-5">
+                <div className="py-2 font-pop pe-3 w-[70%]">
                   From knowledge from brain research to personal experience and
                   competence.
                 </div>
-                <div className=" pt-10">
+                <div className="lg:mb-0 mb-4 mt-6">
                   <Button />
                 </div>
               </div>
             </div>
           </div>
-          <div className="lg:w-[45%] w-[100%] rounded-2xl relative border-2 border-[#AFAFAF]">
+          <div className="lg:w-[45%] w-full rounded-2xl relative border-2 border-[#AFAFAF]">
+  <div className="p-5">
+    <img
+      src="../Images/featuretwo.png"
+      alt="nothing"
+      className="h-[20%] w-[25%]"
+    />
+    <div className="flex flex-col w-full">
+      <div className="py-3 font-pop w-full">
+      Current results from brain research and neuromental, effective methods.
+      </div>
+      <Button />
+    </div>
+  </div>
+  <div className="flex font-pop items-center absolute top-6 left-40 font-semibold w-[40%]">
+    Diploma in leadership
+    <br /> trainer
+  </div>
+</div>
+
+          {/* <div className="lg:w-[45%] w-[100%] rounded-2xl relative border-2 border-[#AFAFAF]">
             <div className="h-[50%] w-[50%] p-5">
               <img
                 src="../Images/featuretwo.png"
@@ -37,22 +57,19 @@ const Cards = () => {
                 className="h-[80%] w-[80%]"
               />
               <div className="flex flex-col">
-                <div className="py-3">
-                  Current results from brain research and neuromental, effective
-                  methods.
+                <div className="py-3 font-pop w-[100%]">
+                  Current results from brain research and neuromental
                 </div>
-                <div>
                   <Button />
-                </div>
               </div>
             </div>
             <div className="flex font-pop items-center absolute  top-6  left-48 font-semibold w-[40%] ">
               Diploma in leadership
               <br /> trainer
             </div>
-          </div>
+          </div> */}
         </div>
-        <div className="flex my-6 gap-5">
+        <div className=" flex lg:flex-row flex-col my-6 gap-5">
           <div className="basis-[33.33%] p-4 rounded-2xl  border-2 border-[#AFAFAF]">
             {/* <div className=" lg:ml-10 sm:ml-80 p-4 rounded-xl  border-2 border-[#AFAFAF]"> */}
               <div className="flex justify-center relative gap-10 mx-auto">
@@ -68,7 +85,7 @@ const Cards = () => {
                 </div>
               </div>
               <div>
-                <div className=" font-pop">
+                <div className="font-pop">
                   With this method you will learn to dissolve emotional and
                   mental blockages in a very lasting way.
                 </div>

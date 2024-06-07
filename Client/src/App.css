@@ -10,3 +10,8 @@
 .semi{
     transform: translateY(10%); 
 }
+.text-gradient {
+    background: linear-gradient(180deg, #8B668B 0%, #B8C2CE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

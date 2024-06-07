@@ -8,6 +8,7 @@ import Cards from "../../Components/Portfolio/Home/Cards";
 import Sectiontwo from "../../Components/Portfolio/Home/Sectiontwo";
 import Figure from "../../Components/Portfolio/Home/Figure";
 import Semifooter from "../../Components/Portfolio/Home/Semifooter";
+import Slider from "../../Components/Portfolio/Home/Slider";
 
 
 const Home = () => {
@@ -18,9 +19,10 @@ const Home = () => {
       <SectionCard />
       <Cards />
       <Sectiontwo />
-      <div className="text-center text-xl py-6">
+      <div className="text-center text-xl font-semibold py-6">
         Instagram <span className="text-[#8B668B]">Feeds </span>
       </div>
+      <Slider/>
       <Figure />
       <Semifooter />
       <Footer />
