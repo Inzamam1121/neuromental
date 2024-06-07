@@ -116,10 +116,15 @@ export default function Slider() {
       <Swiper
         slidesPerView={3}
         spaceBetween={10}
+        className="flex justify-center items-center my-24"
         pagination={{
           clickable: true,
         }}
         breakpoints={{
+            500:{
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
@@ -134,13 +139,13 @@ export default function Slider() {
           },
         }}
         modules={[Pagination]}
-        className="mySwiper"
+       
       >
         <SwiperSlide>
         <div className="swiper-zoom-container flex justify-center">
              <div className="flex flex-col  items-center justify-center">
                <div>
-                 <img src="../Images/slider.png"/>
+                 <img src="../Images/slider.png" className='w-[76px]'/>
                </div>
 
                <p className="font-[Lato] text-[#525252] font-semibold pt-3 text-center">
@@ -167,7 +172,7 @@ export default function Slider() {
         <div className="swiper-zoom-container">
              <div className="flex flex-col justify-center items-center">
                <div>
-                 <img src="../Images/sliderone.png" className='w-[80%]' />
+                 <img src="../Images/sliderone.png"  className='w-[76px]' />
                </div>
 
                <p className="font-[Lato] text-[#525252] font-semibold pt-2">
@@ -191,21 +196,21 @@ export default function Slider() {
         </SwiperSlide>
         <SwiperSlide>
 
-        <div className="swiper-zoom-container">
+        <div className="swiper-zoom-container flex justify-center">
              <div className="flex flex-col justify-center items-center">
              <div>
-                 <img src="../Images/slidertwo.png" />               </div>
+                 <img src="../Images/slidertwo.png" className='w-[76px]' />               </div>
 
                <p className="font-[Lato] text-[#525252] font-semibold pt-2">
                  Hannah Schmitt
                </p>
                <Rating name="read-only" value={value} readOnly  color='#F8C953' className='py-3' />
                <div className='flex'>
-               <img src='../Images/image.png'/>
+               <img src='../Images/image.png' className='w-[8.4]'/>
                <img src='../Images/image.png'/>
                </div>
              
-               <p className="font-[Lato] text-[#525252] text-[Lato]  pt-1" >
+               <p className="font-[Lato]  text-[Lato] text-[#525252] pt-1" >
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
                  nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
                  magna eget nibh in turpis. Consequat duis diam lacus arcu.
@@ -215,8 +220,6 @@ export default function Slider() {
                </div>
            </div>
         </SwiperSlide>
-       
-      
       </Swiper>
       </div>
     </>
