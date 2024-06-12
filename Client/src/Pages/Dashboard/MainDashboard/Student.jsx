@@ -9,10 +9,6 @@ import { IoClose } from "react-icons/io5";
 import Dashboard from './Dashboard';
 
 
-
-
-
-
 const Student = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (

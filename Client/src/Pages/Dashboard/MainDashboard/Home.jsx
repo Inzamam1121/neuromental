@@ -2,6 +2,7 @@ import React from 'react';
 import { PiBooksFill } from "react-icons/pi";
 import { IoSearchOutline } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const data = [
@@ -35,7 +36,7 @@ const Home = () => {
     return (
         <div className='w-[90%] m-auto  flex flex-col gap-4'>
             <div className='bg-white rounded-xl'>
-                <div className="topmain items-center">
+                <div className="topmain items-center" >
                     <div className='flex justify-between items-center bg-[#737090] h-16 px-12 rounded-t-xl'>
                         <div className='flex gap-4'>
                             <div>
@@ -56,24 +57,26 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="students">
-                    <div className='grid grid-cols-1 gap-x-6 md:grid-cols-2 xl:grid-cols-3 w-[90%] m-auto rounded-2xl py-10'>
+                    <div className='grid grid-cols-1 gap-x-6 md:grid-cols-2 2xl:grid-cols-3 w-[90%] m-auto rounded-2xl py-10'>
                         {data.map((student, index) => (
-                            <div key={index}>
-                                <div className='flex bg-[#868686] gap-10 px-8 rounded-t-2xl relative py-10'>
-                                    <div className='gap-6 flex flex-col'>
-                                        <h2 className='font-pop text-white text-2xl font-semibold '>{`Diploma in ${student.diploma}`}</h2>
-                                        <p className='text-white font-pop text-sm font-bold'>{student.instructor}</p>
+                            <Link to={'/Student/course/stream'}>
+                                <div key={index} >
+                                    <div className='flex bg-[#868686] gap-10 px-8 rounded-t-2xl relative py-10'>
+                                        <div className='gap-6 flex flex-col'>
+                                            <h2 className='font-pop text-white text-2xl font-semibold '>{`Diploma in ${student.diploma}`}</h2>
+                                            <p className='text-white font-pop text-sm font-bold'>{student.instructor}</p>
+                                        </div>
+                                        <div>
+                                            <p className='text-white font-ruda text-7xl text-right'><PiBooksFill /></p>
+                                        </div>
+                                        <img src={student.profileImg} alt="Profile" className='absolute right-[10%] bottom-[-20%] w-[20%]' />
                                     </div>
-                                    <div>
-                                        <p className='text-white font-ruda text-7xl text-right'><PiBooksFill /></p>
+                                    <div className="bg-white flex justify-end gap-2 mt-28">
+                                        <img src={student.icon1} alt="Icon 1" />
+                                        <img src={student.icon2} alt="Icon 2" />
                                     </div>
-                                    <img src={student.profileImg} alt="Profile" className='absolute right-[10%] bottom-[-20%] w-[20%]' />
                                 </div>
-                                <div className="bg-white flex justify-end gap-2 mt-28">
-                                    <img src={student.icon1} alt="Icon 1" />
-                                    <img src={student.icon2} alt="Icon 2" />
-                                </div>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
@@ -100,10 +103,10 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="students">
-                    
+
                 </div>
             </div>
-            
+
         </div>
     );
 }

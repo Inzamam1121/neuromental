@@ -20,7 +20,8 @@ export default {
 
       },
       boxShadow:{
-        shadow: "0px 141px 200px -80px #8B668B4D"
+        shadow: "0px 141px 200px -80px #8B668B4D",
+        shadow1:'0px 1px 7px 0px #00000040'
 
       }
     },

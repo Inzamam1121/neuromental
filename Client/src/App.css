@@ -1,0 +1,24 @@
+.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+    background-color: #737090 !important;
+    color: white !important;
+}
+
+.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root{
+    border-color: #737090 !important;
+    font-family: "Poppins" !important;
+    border: 2px  solid #737090 !important;
+    font-size: 20px !important;
+    color: #737090 !important;
+    padding: 15px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    
+}
+@media screen and (min-width: 600px) and (orientation: portrait) {
+    .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root{
+        display: flex;
+        flex-direction: column;
+        color: bisque;
+    }
+  }
+  
