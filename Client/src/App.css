@@ -1,24 +1,17 @@
-.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
-    background-color: #737090 !important;
-    color: white !important;
+.btn{
+    transform: translateY(50%);
 }
-
-.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root{
-    border-color: #737090 !important;
-    font-family: "Poppins" !important;
-    border: 2px  solid #737090 !important;
-    font-size: 20px !important;
-    color: #737090 !important;
-    padding: 15px !important;
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-    
+.img{
+    transform: translateY(-30%);
 }
-@media screen and (min-width: 600px) and (orientation: portrait) {
-    .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root{
-        display: flex;
-        flex-direction: column;
-        color: bisque;
-    }
+.img_2{
+    transform: translateY(-10%); 
+}
+.semi{
+    transform: translateY(10%); 
+}
+.text-gradient {
+    background: linear-gradient(180deg, #8B668B 0%, #B8C2CE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  
