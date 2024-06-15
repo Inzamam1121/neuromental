@@ -1,17 +1,25 @@
-.btn{
+.btn {
     transform: translateY(50%);
 }
-.img{
+
+.img {
     transform: translateY(-30%);
 }
-.img_2{
-    transform: translateY(-10%); 
+
+.img_2 {
+    transform: translateY(-10%);
 }
-.semi{
-    transform: translateY(10%); 
+
+.semi {
+    transform: translateY(10%);
 }
+
 .text-gradient {
     background: linear-gradient(180deg, #8B668B 0%, #B8C2CE 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
+
+html {
+    scroll-behavior: smooth;
+}

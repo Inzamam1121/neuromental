@@ -18,7 +18,7 @@ const data = [
 const Figure = () => {
   return (
     <div>
-      <div className="w-[90%]  gap-8 flex flex-col lg:flex-row m-auto justify-center ">
+      <div className="w-[90%]  gap-8 flex flex-col lg:flex-row m-auto mb-20 justify-center ">
         {data.map((item, index) => (
           <div
             className={`flex  relative gap-6 flex-col ${

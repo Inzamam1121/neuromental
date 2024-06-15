@@ -11,7 +11,6 @@ const MainPortfoio = () => {
             <Route path='/' element={<Home/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/login' element={<Login/>}/>
-            <Route path='/login' element={<Login/>}/>
             <Route path='/signup' element={<SignUp/>}/>
         </Routes>
     </div>

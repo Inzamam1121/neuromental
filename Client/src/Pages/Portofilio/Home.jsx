@@ -17,12 +17,13 @@ const Home = () => {
       <Nav />
       <Banner />
       <SectionCard />
-      <Cards />
-      <Sectiontwo />
-      <div className="text-center text-xl font-semibold py-6">
-        Instagram <span className="text-[#8B668B]">Feeds </span>
+      <div id="about-us">
+        <Cards />
       </div>
-      <Slider/>
+      <Slider />
+      <h2 className="text-center font-pop text-4xl font-bold py-6">
+        Instagram <span className="text-[#8B668B]">Feeds </span>
+      </h2>
       <Figure />
       <Semifooter />
       <Footer />

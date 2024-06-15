@@ -9,15 +9,15 @@ const Nav = () => {
   const [Isdisplay, setIsdisplay] = useState(false)
   return (
     <>
-      <div>
+      <div className='relative z-50'>
         <div className='flex justify-between py-4 items-center px-6 bg-white'>
           <div className="logo">
-            <img src="../../public/images/logo.png" alt="" />
+            <img src="../../Images/logo.png" alt="" className='w-[70%]' />
           </div>
           <div className="items mr-4 font-pop hidden lg:block">
             <ul className=' flex'>
-              <li className='px-4'><Link>Home</Link></li>
-              <li className='px-4'><Link>About Us</Link></li>
+              <li className='px-4'><Link to="/">Home</Link></li>
+              <li className='px-4'><a href="#about-us">About Us</a></li>
               <li className='px-4'><Link to='contact'>Contact Us</Link></li>
             </ul>
           </div>

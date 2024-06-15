@@ -38,13 +38,9 @@ const Home = () => {
             <div className='bg-white rounded-xl'>
                 <div className="topmain items-center" >
                     <div className='flex justify-between items-center bg-[#737090] h-16 px-12 rounded-t-xl'>
-                        <div className='flex gap-4'>
-                            <div>
-                                <p className='text-white font-ruda text-4xl'> <PiBooksFill /></p>
-                            </div>
-                            <div>
-                                <h2 className='text-white font-bold font-ruda text-3xl'>My Courses</h2>
-                            </div>
+                        <div className='flex items-center gap-4'>
+                                <p className='text-white font-ruda text-3xl'> <PiBooksFill /></p>
+                                <h2 className='text-white font-bold font-ruda text-xl'>My Courses</h2>
                         </div>
                         <div className='flex gap-4'>
                             <div>
@@ -61,10 +57,10 @@ const Home = () => {
                         {data.map((student, index) => (
                             <Link to={'/Student/course/stream'}>
                                 <div key={index} >
-                                    <div className='flex bg-[#868686] gap-10 px-8 rounded-t-2xl relative py-10'>
-                                        <div className='gap-6 flex flex-col'>
-                                            <h2 className='font-pop text-white text-2xl font-semibold '>{`Diploma in ${student.diploma}`}</h2>
-                                            <p className='text-white font-pop text-sm font-bold'>{student.instructor}</p>
+                                    <div className='flex bg-[#868686] gap-4 px-4 rounded-t-2xl relative py-10'>
+                                        <div className='gap-4 flex flex-col'>
+                                            <h2 className='font-pop text-white text-lg font-semibold '>{`Diploma in ${student.diploma}`}</h2>
+                                            <p className='text-white font-pop font-bold'>{student.instructor}</p>
                                         </div>
                                         <div>
                                             <p className='text-white font-ruda text-7xl text-right'><PiBooksFill /></p>

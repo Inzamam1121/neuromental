@@ -16,7 +16,6 @@ import { MdOutlinePayment } from "react-icons/md";
 
 
 const Nav = ({ isMenuOpen, setIsMenuOpen, toggleMenu }) => {
-    // const [isMenuOpen, setIsMenuOpen] = useState(false);
     const data = [
         {
             name: "Home",
@@ -88,13 +87,13 @@ const Nav = ({ isMenuOpen, setIsMenuOpen, toggleMenu }) => {
                     <Link key={index} to={item.link}>
                         <li
                             className={`
-        px-4 md:px-6 py-4 cursor-pointer font-medium text-black text-base border-l-4
-        // ${location.pathname === item.link && 'bg-[#7370907A] text-[white]'} 
-        ${location.pathname !== item.link ? 'hover:text-white hover:border-mainpurple hover:bg-[#7370907A] ' : 'text-black border-mainpurple bg-[#7370907A]'}
-        ease-in-out duration-300`
+                                px-4 md:px-6 py-4 cursor-pointer font-medium text-black text-base border-l-4
+                                ${location.pathname === item.link && 'bg-[#7370907A] text-[white]'} 
+                                ${location.pathname !== item.link ? 'hover:text-white hover:border-mainpurple hover:bg-[#7370907A] ' : 'text-black border-mainpurple bg-[#7370907A]'}
+                                ease-in-out duration-300`
                             }
                         >
-                            <div className="flex flex-row gap-4 items-center text-2xl font-pop">
+                            <div className="flex flex-row gap-4 items-center text-lg font-pop">
                                 <item.Icon />
                                 {item.name}
                             </div>

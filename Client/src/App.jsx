@@ -10,12 +10,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <div className='overflow-x-hidden'>
         <Routes>
           <Route path='/*' element={<MainPortfoio/>}></Route>
           <Route path='/Student/*' element={<Student/>}></Route>
           <Route path='/Teacher/*' element={<Teacher/>}></Route>
-
         </Routes>
+      </div>
       </BrowserRouter>
     </>
   )

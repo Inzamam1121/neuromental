@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaFacebook } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 
@@ -34,7 +35,7 @@ const Login = () => {
                                     <button type="button" className="bg-white border rounded-full px-10 text-red-600"><FaGoogle /></button>
                                     <button type="button" className="bg-white border rounded-full px-10 py-3 text-blue-600"><FaFacebook /></button>
                                 </div>
-                                <p>Don't have an account yet? <a href="#" className="text-black font-semibold">Register for free</a></p>
+                                <p>Don't have an account yet? <Link to="/signup" className="text-black font-semibold">Register for free</Link></p>
                             </form>
                         </div>
                     </div>

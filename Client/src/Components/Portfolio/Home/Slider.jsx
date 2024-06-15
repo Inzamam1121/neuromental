@@ -87,7 +87,7 @@
 //             </div>
 //           </div>
 //         </SwiperSlide>
-      
+
 //       </Swiper>
 //       </div>
 //     </>
@@ -108,121 +108,62 @@ import Rating from '@mui/material/Rating';
 import { Pagination } from 'swiper/modules';
 
 export default function Slider() {
-    const [value, setValue] =useState(2);
+  const [value, setValue] = useState(2);
+
+  const TestimonialData = [
+    {
+      name: "Hannah Schmitt",
+      rating: "5",
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim ",
+      img: "../TestimonialData/image1.png"
+    }
+  ]
+
   return (
-    <>
-    
-    <div className='container mx-auto w-[90%] my-9'> 
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={10}
-        className="flex justify-center items-center my-24"
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-            500:{
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-          },
-        }}
-        modules={[Pagination]}
-       
-      >
-        <SwiperSlide>
-        <div className="swiper-zoom-container flex justify-center">
-             <div className="flex flex-col  items-center justify-center">
-               <div>
-                 <img src="../Images/slider.png" className='w-[76px]'/>
-               </div>
+    <div className='my-20 flex flex-col gap-10'>
 
-               <p className="font-[Lato] text-[#525252] font-semibold pt-3 text-center">
-                 Hannah Schmitt
-               </p>
-               <Rating name="read-only" value={value} readOnly  className='py-3 m-auto' />
-               <div className='flex justify-center'>
-               <img src='../Images/image.png'/>
-               <img src='../Images/image.png '/>
-               </div>
-             
-               <p className="font-[Lato] text-[#525252] text-[Lato] pt-3">
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-                 nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
-                 magna eget nibh in turpis. Consequat duis diam lacus arcu.
-                 Faucibus venenatis felis id augue sit cursus pellentesque enim
-               </p>
-              
-             </div>
-           </div>
-        </SwiperSlide>
-        <SwiperSlide>
+      <h3 className='font-pop font-bold text-4xl text-center'>Testimonials of our <span className='text-mainpurple'>graduate students</span></h3>
 
-        <div className="swiper-zoom-container">
-             <div className="flex flex-col justify-center items-center">
-               <div>
-                 <img src="../Images/sliderone.png"  className='w-[76px]' />
-               </div>
+      <div className='mx-auto my-20 w-[90%] lg:w-[85%] flex flex-col gap-28 lg:flex-row justify-between'>
 
-               <p className="font-[Lato] text-[#525252] font-semibold pt-2">
-                 Hannah Schmitt
-               </p>
-               <Rating name="read-only" value={value} readOnly className='py-3' />
-               <div className='flex'>
-               <img src='../Images/image.png'/>
-               <img src='../Images/image.png'/>
-               </div>
-             
-               <p className="font-[Lato] text-[#525252] text-[Lato] pt-1">
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-                 nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
-                 magna eget nibh in turpis. Consequat duis diam lacus arcu.
-                 Faucibus venenatis felis id augue sit cursus pellentesque enim
-               </p>
-        
-             </div>
-           </div>
-        </SwiperSlide>
-        <SwiperSlide>
+        <div className="rounded-2xl basis-[33.33%] bg-transparent relative">
+          <div className="bg-mainpurple absolute -z-10 skew-y-6 top-[10%] -left-[5%] rounded-[50px] w-full h-full">
+          </div>
+          <div className="bg-white px-6 pb-10 shadow-shadowtest skew-y-6 flex flex-col rounded-[50px] relative z-30 gap-6 items-center justify-center font-pop">
+            <div className="w-20 h-20 rounded-full">
+              <img src="../TestimonialData/image1.png" alt="" className='rounded-full object-cover w-full h-full' />
+            </div>
+            <h3 className='text-xl font-semibold'>Hannah Schmitt</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim </p>
+          </div>
+        </div>
 
-        <div className="swiper-zoom-container flex justify-center">
-             <div className="flex flex-col justify-center items-center">
-             <div>
-                 <img src="../Images/slidertwo.png" className='w-[76px]' />               </div>
+        <div className="rounded-2xl basis-[33.33%] bg-transparent relative">
+          <div className="bg-mainpurple absolute -z-10 skew-y-6 -top-[3%] rounded-[50px] w-full h-[110%]">
+          </div>
+          <div className="bg-white px-6 pb-10 shadow-shadowtest  flex flex-col rounded-[50px] relative z-30 gap-6 items-center justify-center font-pop">
+            <div className="w-20 h-20 rounded-full">
+              <img src="../TestimonialData/image1.png" alt="" className='rounded-full object-cover w-full h-full' />
+            </div>
+            <h3 className='text-xl font-semibold'>Hannah Schmitt</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim </p>
+          </div>
+        </div>
 
-               <p className="font-[Lato] text-[#525252] font-semibold pt-2">
-                 Hannah Schmitt
-               </p>
-               <Rating name="read-only" value={value} readOnly  color='#F8C953' className='py-3' />
-               <div className='flex'>
-               <img src='../Images/image.png' className='w-[8.4]'/>
-               <img src='../Images/image.png'/>
-               </div>
-             
-               <p className="font-[Lato]  text-[Lato] text-[#525252] pt-1" >
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-                 nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
-                 magna eget nibh in turpis. Consequat duis diam lacus arcu.
-                 Faucibus venenatis felis id augue sit cursus pellentesque enim
-              </p>            
-            
-               </div>
-           </div>
-        </SwiperSlide>
-      </Swiper>
+        <div className="rounded-2xl basis-[33.33%] bg-transparent relative">
+          <div className="bg-mainpurple absolute -z-10 -skew-y-6 top-[10%] -right-[5%] rounded-[50px] w-full h-full">
+          </div>
+          <div className="bg-white px-6 pb-10 shadow-shadowtest -skew-y-6 flex flex-col rounded-[50px] relative z-30 gap-6 items-center justify-center font-pop">
+            <div className="w-20 h-20 rounded-full">
+              <img src="../TestimonialData/image1.png" alt="" className='rounded-full object-cover w-full h-full' />
+            </div>
+            <h3 className='text-xl font-semibold'>Hannah Schmitt</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim </p>
+          </div>
+        </div>
+
       </div>
-    </>
+    </div>
   );
 }
 
